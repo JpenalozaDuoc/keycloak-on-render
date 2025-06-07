@@ -6,4 +6,10 @@ ENV KEYCLOAK_ADMIN_PASSWORD=admin
 EXPOSE 8080
 
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
-CMD ["start-dev","--http-host=0.0.0.0","--http-port=8080","--hostname=keycloak-on-render-vsjw.onrender.com","--hostname-strict=false"]
+CMD [
+"start-dev",
+"--http-host=0.0.0.0",
+"--http-port=8080",
+"--hostname=keycloak-on-render-vsjw.onrender.com",
+"--hostname-strict=false"
+]
